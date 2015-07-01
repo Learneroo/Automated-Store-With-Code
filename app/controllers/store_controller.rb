@@ -1,6 +1,7 @@
 class StoreController < ApplicationController
   def home
     @title = "Automated Store"
+    @product = Product.newest
   end
 
   def about
